@@ -71,6 +71,9 @@
         <p><strong>Email :</strong> <a href="mailto:pierre.pouts@gmail.com">pierre.pouts@gmail.com</a></p>
         <p><strong>Téléphone :</strong> +33 06.13.88.31.63</p>
     </div>
+    <footer>
+        <p>&copy; 2024 Blog</p>
+    </footer>
 </template>
 
 <script setup>
