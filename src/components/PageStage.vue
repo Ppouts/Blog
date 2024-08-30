@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Page.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<template>
     <header>
         <h1>BLOG</h1>
-        <div class="buttons">
-            <form action="/">
-                <button type="submit">Menu</button>
-            </form>
-        </div>
+        <RouterLink class="button" to="/"> Home </RouterLink>
 
     </header>
 
@@ -28,7 +15,7 @@
             <ul>
                 <li>Visite de la caserne de gendarmerie de Judaïque</li>
                 <li>Mise en place d’une maquette Figma</li>
-                <li><a href="{{ url_for('cahier_des_charges') }}">Creation du cahier des charges</a></li>
+                <RouterLink  to="/cahier_des_charges"> Création cahier des charges </RouterLink>
             </ul>
 
             <h4>Jour 2 (8h-16h)</h4>
@@ -155,5 +142,12 @@
     <footer>
         <p>&copy; 2024 Blog</p>
     </footer>
-</body>
-</html>
+</template>
+
+<script setup>
+
+</script>
+
+<style lang="scss" scoped>
+
+</style>

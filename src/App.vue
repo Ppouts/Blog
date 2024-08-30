@@ -1,3 +1,8 @@
+<template>
+  <RouterView />
+</template>
+
+<style>
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
@@ -58,7 +63,7 @@ input[type="file"] {
     border-radius: 5px;
 }
 
-button {
+.button {
     background-color: #003366;
     color: white;
     padding: 10px 20px;
@@ -68,7 +73,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button:hover {
     background-color: #00509e;
 }
 
@@ -114,3 +119,9 @@ header h1 {
     font-size: 14px; /* Taille de police des boutons */
     padding: 8px 16px; /* Espacement intérieur des boutons */
 }
+
+.cv {
+  margin: auto auto;
+}
+
+</style>

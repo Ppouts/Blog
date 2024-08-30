@@ -1,35 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Page.css') }}">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        .contact-info {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
+<template>
+ 
+ <header>
         <h1>BLOG</h1>
-        <div class="buttons">
-            <form action="stage_B2">
-                <button type="submit">Stage B2</button>
-            </form>
+        <div class="buttons" />
+        <RouterLink class="button" to="/stage_b2"> Retour </RouterLink>
     </header>
     
     <h1>Cahier des Charges</h1>
@@ -97,6 +71,12 @@
         <p><strong>Email :</strong> <a href="mailto:pierre.pouts@gmail.com">pierre.pouts@gmail.com</a></p>
         <p><strong>Téléphone :</strong> +33 06.13.88.31.63</p>
     </div>
+</template>
 
-</body>
-</html>
+<script setup>
+
+</script>
+
+<style lang="scss" scoped>
+
+</style>
