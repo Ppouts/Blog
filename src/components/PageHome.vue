@@ -39,13 +39,37 @@
     <footer>
         <p>&copy; 2024 Blog</p>
     </footer>
-    
+
 </template>
 
 <script setup>
 import { RouterLink } from 'vue-router';
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
 </style>
